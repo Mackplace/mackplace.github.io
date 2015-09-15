@@ -22,8 +22,8 @@ video
 
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 360;
+    height: 360;
     background: url(../img/intro-bg.j) no-repeat bottom center scroll ;
     background-size: cover;
 
