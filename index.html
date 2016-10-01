@@ -45,7 +45,7 @@
 <script>
     function dashboard(id, fData){
         var barColor = d3.scale.linear().domain([1500,2000]).range(["#6EB6CC","#E04644"]);
-        function segColor(c){ return {eating:"#4C5B5C", enter_home:"FF715B",meal_preparation:"#F9CB40",sleeping:"#BCED09",wash_dishes:"#2F52E0",work:"#2F0147"}[c]; }
+        function segColor(c){ return {eating:"#4C5B5C", enter_home:"#FF715B",meal_preparation:"#F9CB40",sleeping:"#BCED09",wash_dishes:"#2F52E0",work:"#2F0147"}[c]; }
 
         // compute total for each state.
         fData.forEach(function(d){d.total=d.freq.eating+d.freq.enter_home+d.freq.meal_preparation+ d.freq.sleeping+ d.freq.wash_dishes+ d.freq.work;});
